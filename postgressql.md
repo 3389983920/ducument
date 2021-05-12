@@ -4,7 +4,12 @@ select * from pg_available_extensions where name = 'pgcrypto' or name = 'uuid-os
 -- uuid依赖
 create extension "pgcrypto";
 create extension "uuid-ossp"
-创建uuid 36位
+-- 创建uuid 36位
 select gen_random_uuid();
 select uuid_generate_v4();
+
+递归查询语句
+
+
+
 
